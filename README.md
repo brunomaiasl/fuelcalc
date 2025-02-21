@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+<a href="https://fueelcalc.netlify.app/" target="_blank">FuelCalc</a>:  Calculadora de Combustível (Álcool vs Gasolina)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+FuelCalc é uma calculadora de combustível, é uma aplicação simples e eficiente para ajudar motoristas a decidir qual combustível (álcool ou gasolina) é mais vantajoso com base no preço por litro. 
+O sistema calcula a razão entre os preços dos combustíveis e indica a opção mais econômica, fornecendo uma solução prática para o dia a dia.
+Este projeto demonstra minha habilidade no desenvolvimento de aplicações web modernas, utilizando React, TypeScript e CSS para criação de interfaces responsivas e interativas.<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Objetivo do Projeto
 
-## Expanding the ESLint configuration
+O objetivo do FuelCalc é fornecer uma ferramenta simples que ajude motoristas a tomar decisões mais informadas sobre qual combustível utilizar, com base na comparação entre o preço do álcool e da gasolina. A aplicação realiza os seguintes cálculos:<br>
+	•	Cálculo da razão entre o preço do álcool e o da gasolina.<br>
+	•	Exibição da opção mais vantajosa: álcool ou gasolina, com base na razão calculada (até 70% compensa usar álcool).<br>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Tecnologias Usadas
 
-- Configure the top-level `parserOptions` property like this:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:<br>
+	•	React: Biblioteca para a construção de interfaces de usuário dinâmicas.<br>
+  •	React Hook - useState: Para gerenciar o estado da aplicação, permitindo que o valor dos inputs (preço do álcool e da gasolina) seja atualizado dinamicamente.<br>
+	•	JavaScript (ES6+): Para lógica de cálculos e manipulação de estado.<br>
+	•	CSS: Estilização da interface para garantir uma experiência visual agradável e responsiva.<br>
+	•	TypeScript: Para tipagem estática e maior segurança no desenvolvimento.<br>
+	
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Funcionalidades<br><br>
+	1.	Cálculo da razão entre os preços: A aplicação compara o preço do álcool e da gasolina e calcula qual combustível é mais vantajoso.<br>
+	2.	Exibição de recomendação: Dependendo da razão calculada, a aplicação sugere qual combustível usar: álcool ou gasolina.<br>
+	3.	Entrada de dados simples: O usuário pode inserir os preços do álcool e da gasolina de forma fácil e rápida.<br>
+	4.	Interface responsiva: A aplicação é totalmente responsiva, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.<br>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Demonstração
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Você pode visualizar o projeto em funcionamento acessando o link de deploy:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<a href="https://fueelcalc.netlify.app/" target="_blank">FuelCalc</a>
